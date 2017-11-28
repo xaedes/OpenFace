@@ -31,9 +31,9 @@
 //       in IEEE Int. Conference on Computer Vision Workshops, 300 Faces in-the-Wild Challenge, 2013.    
 //
 ///////////////////////////////////////////////////////////////////////////////
-#include "Face_utils.h"
+#include <OpenFace/FaceAnalyser/Face_utils.h>
 
-#include "SVM_static_lin.h"
+#include <OpenFace/FaceAnalyser/SVM_static_lin.h>
 
 using namespace FaceAnalysis;
 

@@ -32,13 +32,13 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include "LandmarkDetectorParameters.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorParameters.h>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 // System includes
 #include <sstream>

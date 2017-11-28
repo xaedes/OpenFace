@@ -46,16 +46,16 @@
 #include <opencv2/highgui/highgui.hpp>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 #include <boost/algorithm/string.hpp>
 
 // Local includes
-#include "LandmarkCoreIncludes.h"
+#include <OpenFace/LandmarkDetector/LandmarkCoreIncludes.h>
 
-#include <Face_utils.h>
-#include <FaceAnalyser.h>
-#include <GazeEstimation.h>
+#include <OpenFace/FaceAnalyser/Face_utils.h>
+#include <OpenFace/FaceAnalyser/FaceAnalyser.h>
+#include <OpenFace/GazeAnalyser/GazeEstimation.h>
 
 #ifndef CONFIG_DIR
 #define CONFIG_DIR "~"

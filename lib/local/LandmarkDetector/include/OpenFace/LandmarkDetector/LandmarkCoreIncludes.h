@@ -36,9 +36,9 @@
 #ifndef __LANDMARK_CORE_INCLUDES_h_
 #define __LANDMARK_CORE_INCLUDES_h_
 
-#include "LandmarkDetectorModel.h"
-#include "LandmarkDetectorFunc.h"
-#include "LandmarkDetectorParameters.h"
-#include "LandmarkDetectorUtils.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorModel.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorFunc.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorParameters.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 #endif

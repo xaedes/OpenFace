@@ -9,4 +9,4 @@
 //
 // License can be found in OpenFace-license.txt
 //
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>

@@ -15,7 +15,7 @@ SET(SOURCE
 )
 
 SET(HEADERS
-    include/GazeEstimation.h
+    include/OpenFace/GazeAnalyser/GazeEstimation.h
 )
 
 include_directories(./include)
@@ -23,5 +23,11 @@ include_directories(${GAZEANALYSER_SOURCE_DIR}/include)
 
 add_library( GazeAnalyser ${SOURCE} ${HEADERS})
 
+target_link_libraries(GazeAnalyser PUBLIC ${OpenCV_LIBS} ${Boost_LIBRARIES} ${TBB_LIBRARIES} ${BLAS_LIBRARIES})
+target_link_libraries(GazeAnalyser PUBLIC dlib)
+target_include_directories(GazeAnalyser PUBLIC ${BLAS_INCLUDE_DIRS})
+target_include_directories(GazeAnalyser PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_include_directories(GazeAnalyser PUBLIC ${Boost_INCLUDE_DIRS})
+
 install (TARGETS GazeAnalyser DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include/OpenFace)
+install (FILES ${HEADERS} DESTINATION include/OpenFace/GazeAnalyser)

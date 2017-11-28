@@ -49,8 +49,8 @@
 #include <stdio.h>
 #include <time.h>
 
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 #define INFO_STREAM( stream ) \
 std::cout << stream << std::endl

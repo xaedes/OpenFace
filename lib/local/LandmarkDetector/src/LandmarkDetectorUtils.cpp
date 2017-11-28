@@ -32,9 +32,9 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include <LandmarkDetectorUtils.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>
@@ -42,8 +42,8 @@
 #include <opencv2/calib3d.hpp>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 using namespace boost::filesystem;
 

@@ -44,12 +44,12 @@
 #include <opencv2/core/core.hpp>
 
 // Local includes
-#include "SVR_dynamic_lin_regressors.h"
-#include "SVR_static_lin_regressors.h"
-#include "SVM_static_lin.h"
-#include "SVM_dynamic_lin.h"
-#include "PDM.h"
-#include "FaceAnalyserParameters.h"
+#include <OpenFace/FaceAnalyser/SVR_dynamic_lin_regressors.h>
+#include <OpenFace/FaceAnalyser/SVR_static_lin_regressors.h>
+#include <OpenFace/FaceAnalyser/SVM_static_lin.h>
+#include <OpenFace/FaceAnalyser/SVM_dynamic_lin.h>
+#include <OpenFace/FaceAnalyser/PDM.h>
+#include <OpenFace/FaceAnalyser/FaceAnalyserParameters.h>
 
 namespace FaceAnalysis
 {

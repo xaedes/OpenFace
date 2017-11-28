@@ -39,9 +39,9 @@
 #include <opencv2/core/core.hpp>
 
 
-#include "SVR_patch_expert.h"
-#include "CCNF_patch_expert.h"
-#include "PDM.h"
+#include <OpenFace/LandmarkDetector/SVR_patch_expert.h>
+#include <OpenFace/LandmarkDetector/CCNF_patch_expert.h>
+#include <OpenFace/LandmarkDetector/PDM.h>
 
 namespace LandmarkDetector
 {

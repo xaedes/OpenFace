@@ -35,9 +35,9 @@
 #ifndef __GAZEESTIMATION_h_
 #define __GAZEESTIMATION_h_
 
-#include "LandmarkDetectorModel.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorModel.h>
 
-#include "opencv2/core/core.hpp"
+#include <opencv2/core/core.hpp>
 
 namespace GazeAnalysis
 {

@@ -10,8 +10,8 @@ set(CONFIG_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_CONFIG_DIR}")
 add_definitions(-DCONFIG_DIR="${CONFIG_DIR}")
 
 find_package( BLAS REQUIRED )
-include_directories( ${BLAS_INCLUDE_DIRS} )
-LINK_DIRECTORIES(${BLAS_LIBRARY_DIRS})	
+# include_directories( ${BLAS_INCLUDE_DIRS} )
+link_directories(${BLAS_LIBRARY_DIRS})	
 
 find_package( OpenCV REQUIRED )
 
@@ -27,9 +27,10 @@ MESSAGE("  Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
 MESSAGE("  Boost_LIBRARIES: ${Boost_LIBRARIES}") 
 MESSAGE("  Boost_LIBRARY_DIRS: ${Boost_LIBRARY_DIRS}") 
 
-INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
-INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS}/boost)
-LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})	
+# include_directories(${Boost_INCLUDE_DIRS})
+
+# INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS}/boost)
+link_directories(${Boost_LIBRARY_DIRS})	
 
 find_package(TBB REQUIRED)
 

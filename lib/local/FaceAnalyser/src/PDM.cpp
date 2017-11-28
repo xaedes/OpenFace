@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
-#include <PDM.h>
+#include <OpenFace/FaceAnalyser/PDM.h>
 
 // OpenCV include
 #include <opencv2/core/core.hpp>
@@ -47,7 +47,7 @@
 	#define M_PI 3.14159265358979323846
 #endif
 
-#include <Face_utils.h>
+#include <OpenFace/FaceAnalyser/Face_utils.h>
 
 // OpenBLAS
 #include <cblas.h>

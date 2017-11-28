@@ -32,9 +32,9 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include "Patch_experts.h"
+#include <OpenFace/LandmarkDetector/Patch_experts.h>
 
 // OpenCV includes
 #include <opencv2/core/core_c.h>
@@ -51,7 +51,7 @@
 	#define M_PI 3.14159265358979323846
 #endif
 
-#include "LandmarkDetectorUtils.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 using namespace LandmarkDetector;
 

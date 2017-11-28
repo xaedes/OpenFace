@@ -32,7 +32,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "FaceAnalyserParameters.h"
+#include <OpenFace/FaceAnalyser/FaceAnalyserParameters.h>
 
 // System includes
 #include <sstream>

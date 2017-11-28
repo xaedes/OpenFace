@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // FaceLandmarkImg.cpp : Defines the entry point for the console application for detecting landmarks in images.
 
-#include "LandmarkCoreIncludes.h"
+#include <OpenFace/LandmarkDetector/LandmarkCoreIncludes.h>
 
 // System includes
 #include <fstream>
@@ -44,15 +44,15 @@
 #include <opencv2/imgproc.hpp>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 #include <dlib/image_processing/frontal_face_detector.h>
 
 #include <tbb/tbb.h>
 
-#include <FaceAnalyser.h>
-#include <GazeEstimation.h>
+#include <OpenFace/FaceAnalyser/FaceAnalyser.h>
+#include <OpenFace/GazeAnalyser/GazeEstimation.h>
 
 #ifndef CONFIG_DIR
 #define CONFIG_DIR "~"

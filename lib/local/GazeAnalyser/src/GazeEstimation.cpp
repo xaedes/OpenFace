@@ -33,15 +33,15 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
-#include "opencv2/core/core.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/calib3d/calib3d.hpp"
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
 #include <iostream>
 
-#include "GazeEstimation.h"
+#include <OpenFace/GazeAnalyser/GazeEstimation.h>
 
-#include "LandmarkDetectorUtils.h"
-#include "LandmarkDetectorFunc.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorFunc.h>
 
 using namespace std;
 

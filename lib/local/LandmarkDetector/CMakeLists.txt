@@ -21,18 +21,18 @@ SET(SOURCE
 )
 
 SET(HEADERS
-    include/CCNF_patch_expert.h	
-    include/LandmarkCoreIncludes.h
-	include/LandmarkDetectionValidator.h
-    include/LandmarkDetectorFunc.h
-	include/LandmarkDetectorModel.h
-	include/LandmarkDetectorParameters.h
-	include/LandmarkDetectorUtils.h
-	include/Patch_experts.h	
-    include/PAW.h
-	include/PDM.h
-	include/SVR_patch_expert.h		
-	include/stdafx.h
+    include/OpenFace/LandmarkDetector/CCNF_patch_expert.h	
+    include/OpenFace/LandmarkDetector/LandmarkCoreIncludes.h
+	include/OpenFace/LandmarkDetector/LandmarkDetectionValidator.h
+    include/OpenFace/LandmarkDetector/LandmarkDetectorFunc.h
+	include/OpenFace/LandmarkDetector/LandmarkDetectorModel.h
+	include/OpenFace/LandmarkDetector/LandmarkDetectorParameters.h
+	include/OpenFace/LandmarkDetector/LandmarkDetectorUtils.h
+	include/OpenFace/LandmarkDetector/Patch_experts.h	
+    include/OpenFace/LandmarkDetector/PAW.h
+	include/OpenFace/LandmarkDetector/PDM.h
+	include/OpenFace/LandmarkDetector/SVR_patch_expert.h		
+	include/OpenFace/LandmarkDetector/stdafx.h
 )
 
 include_directories(./include)
@@ -40,5 +40,11 @@ include_directories(${LandmarkDetector_SOURCE_DIR}/include)
 
 add_library( LandmarkDetector ${SOURCE} ${HEADERS} )
 
+target_link_libraries(LandmarkDetector PUBLIC ${OpenCV_LIBS} ${Boost_LIBRARIES} ${TBB_LIBRARIES} ${BLAS_LIBRARIES})
+target_link_libraries(LandmarkDetector PUBLIC dlib)
+target_include_directories(LandmarkDetector PUBLIC ${BLAS_INCLUDE_DIRS})
+target_include_directories(LandmarkDetector PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_include_directories(LandmarkDetector PUBLIC ${Boost_INCLUDE_DIRS})
+
 install (TARGETS LandmarkDetector DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include/OpenFace)
+install (FILES ${HEADERS} DESTINATION include/OpenFace/LandmarkDetector)

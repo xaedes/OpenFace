@@ -32,9 +32,9 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include <LandmarkDetectorFunc.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorFunc.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>

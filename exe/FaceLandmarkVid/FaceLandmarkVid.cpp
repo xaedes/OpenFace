@@ -34,8 +34,8 @@
 // FaceTrackingVid.cpp : Defines the entry point for the console application for tracking faces in videos.
 
 // Libraries for landmark detection (includes CLNF and CLM modules)
-#include "LandmarkCoreIncludes.h"
-#include "GazeEstimation.h"
+#include <OpenFace/LandmarkDetector/LandmarkCoreIncludes.h>
+#include <OpenFace/GazeAnalyser/GazeEstimation.h>
 
 #include <fstream>
 #include <sstream>
@@ -47,8 +47,8 @@
 #include <opencv2/highgui/highgui.hpp>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 #define INFO_STREAM( stream ) \
 std::cout << stream << std::endl

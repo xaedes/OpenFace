@@ -32,15 +32,15 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include "PAW.h"
+#include <OpenFace/LandmarkDetector/PAW.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 
-#include "LandmarkDetectorUtils.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 using namespace LandmarkDetector;
 

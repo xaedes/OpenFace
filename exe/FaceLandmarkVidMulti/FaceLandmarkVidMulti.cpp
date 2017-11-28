@@ -34,7 +34,7 @@
 
 
 // FaceTrackingVidMulti.cpp : Defines the entry point for the multiple face tracking console application.
-#include "LandmarkCoreIncludes.h"
+#include <OpenFace/LandmarkDetector/LandmarkCoreIncludes.h>
 
 #include <fstream>
 #include <sstream>

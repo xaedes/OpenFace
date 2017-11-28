@@ -32,7 +32,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "FaceAnalyser.h"
+#include <OpenFace/FaceAnalyser/FaceAnalyser.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>
@@ -46,13 +46,13 @@
 #include <string>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/algorithm/string/split.hpp>
 
 // Local includes
-#include "Face_utils.h"
+#include <OpenFace/FaceAnalyser/Face_utils.h>
 
 using namespace FaceAnalysis;
 

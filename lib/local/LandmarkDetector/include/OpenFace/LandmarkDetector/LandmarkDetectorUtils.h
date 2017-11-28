@@ -39,7 +39,7 @@
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 
-#include "LandmarkDetectorModel.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorModel.h>
 
 using namespace std;
 

@@ -23,15 +23,15 @@ SET(SOURCE
 )
 
 SET(HEADERS
-    include/Face_utils.h	
-	include/FaceAnalyser.h
-	include/FaceAnalyserParameters.h
-	include/PAW.h
-	include/PDM.h		
-	include/SVM_dynamic_lin.h
-	include/SVM_static_lin.h
-	include/SVR_dynamic_lin_regressors.h
-	include/SVR_static_lin_regressors.h
+    include/OpenFace/FaceAnalyser/Face_utils.h	
+	include/OpenFace/FaceAnalyser/FaceAnalyser.h
+	include/OpenFace/FaceAnalyser/FaceAnalyserParameters.h
+	include/OpenFace/FaceAnalyser/PAW.h
+	include/OpenFace/FaceAnalyser/PDM.h		
+	include/OpenFace/FaceAnalyser/SVM_dynamic_lin.h
+	include/OpenFace/FaceAnalyser/SVM_static_lin.h
+	include/OpenFace/FaceAnalyser/SVR_dynamic_lin_regressors.h
+	include/OpenFace/FaceAnalyser/SVR_static_lin_regressors.h
 )
 
 include_directories(./include)
@@ -39,5 +39,12 @@ include_directories(${FACEANALYSER_SOURCE_DIR}/include)
 
 add_library( FaceAnalyser ${SOURCE} ${HEADERS})
 
+target_link_libraries(FaceAnalyser PUBLIC ${OpenCV_LIBS} ${Boost_LIBRARIES} ${TBB_LIBRARIES} ${BLAS_LIBRARIES})
+target_link_libraries(FaceAnalyser PUBLIC dlib)
+target_include_directories(FaceAnalyser PUBLIC ${BLAS_INCLUDE_DIRS})
+target_include_directories(FaceAnalyser PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_include_directories(FaceAnalyser PUBLIC ${Boost_INCLUDE_DIRS})
+
+
 install (TARGETS FaceAnalyser DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include/OpenFace)
+install (FILES ${HEADERS} DESTINATION include/OpenFace/FaceAnalyser)

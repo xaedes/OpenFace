@@ -32,16 +32,16 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include "CCNF_patch_expert.h"
+#include <OpenFace/LandmarkDetector/CCNF_patch_expert.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 
 // Local includes
-#include "LandmarkDetectorUtils.h"
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 using namespace LandmarkDetector;
 

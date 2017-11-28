@@ -41,9 +41,9 @@
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 
-#include <LandmarkDetectorParameters.h>
-#include <LandmarkDetectorUtils.h>
-#include <LandmarkDetectorModel.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorParameters.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorModel.h>
 
 using namespace std;
 

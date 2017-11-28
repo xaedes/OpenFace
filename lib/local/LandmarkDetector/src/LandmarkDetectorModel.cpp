@@ -32,19 +32,19 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "stdafx.h"
+#include <OpenFace/LandmarkDetector/stdafx.h>
 
-#include <LandmarkDetectorModel.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorModel.h>
 
 // Boost includes
-#include <filesystem.hpp>
-#include <filesystem/fstream.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
 
 // TBB includes
 #include <tbb/tbb.h>
 
 // Local includes
-#include <LandmarkDetectorUtils.h>
+#include <OpenFace/LandmarkDetector/LandmarkDetectorUtils.h>
 
 using namespace LandmarkDetector;
 

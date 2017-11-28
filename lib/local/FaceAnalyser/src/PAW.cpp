@@ -33,13 +33,13 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
-#include "PAW.h"
+#include <OpenFace/FaceAnalyser/PAW.h>
 
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 
-#include "Face_utils.h"
+#include <OpenFace/FaceAnalyser/Face_utils.h>
 
 using namespace FaceAnalysis;
 

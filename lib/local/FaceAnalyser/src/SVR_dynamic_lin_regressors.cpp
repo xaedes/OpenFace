@@ -32,9 +32,9 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "Face_utils.h"
+#include <OpenFace/FaceAnalyser/Face_utils.h>
 
-#include "SVR_dynamic_lin_regressors.h"
+#include <OpenFace/FaceAnalyser/SVR_dynamic_lin_regressors.h>
 
 using namespace FaceAnalysis;
 
